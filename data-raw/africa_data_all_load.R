@@ -4,17 +4,15 @@ install.packages("tidyverse")
 library(tidyverse)
 library(dplyr)
 
-africa_data_all_raw <- readr::read_csv("data-raw/africa_data_all.csv")
-View(africa_data_all_raw)
+# load 2020 and 2023 data
+africa_data_2020 <- readr::read_csv("data-raw/africa_data_all.csv")
+africa_data_2023 <- readr::read_csv("data-raw/africa_data_2023.csv")
 
-africa <- as_tibble(africa_data_all_raw) # so the data prints a little nicer
-summary(africa) # view raw summary statistics
+africa_data_2020
+africa_data_2023
 
-africa
-head(africa, n=15)
-tail(africa, n=15)
 
-africa <- rename(africa,
+africa.2020 <- rename(africa_data_2020,
        "country" = "Country (or dependency)",
        "pop" = "Population (2020)",
        "pop.yearly.change" = "Yearly change",
@@ -28,25 +26,69 @@ africa <- rename(africa,
        "world.share" = "World Share"
 )
 
-# making sense of the data set
-sapply(africa, class) # one option is to display class of each variable
-str(africa) # a better option is to view structure of the data frame
+africa.2023 <- rename(africa_data_2023,
+                      "country" = "Country (or dependency)",
+                      "pop" = "Population\n (2023)",
+                      "pop.yearly.change" = "Yearly\n Change",
+                      "pop.net.change" = "Net\n Change",
+                      "density" = "Density\n (P/Km²)",
+                      "area" = "Land Area\n (Km²)",
+                      "migrants" = "Migrants\n (net)",
+                      "fertility.rate" = "Fert.\n Rate",
+                      "med.age" = "Med.\n Age",
+                      "urban.pop" = "Urban\n Pop %",
+                      "world.share" = "World\n Share"
+)
 
 # remove percent symbols
-africa$pop.yearly.change <- gsub("%$","", africa$pop.yearly.change)
-africa$fertility.rate <- gsub("%$","", africa$fertility.rate)
-africa$med.age <- gsub("%$","", africa$med.age)
-africa$urban.pop <- gsub("%$","", africa$urban.pop)
-africa$world.share <- gsub("%$","", africa$world.share)
+# 2020
+africa.2020$pop.yearly.change <- gsub("%$","", africa.2020$pop.yearly.change)
+africa.2020$fertility.rate <- gsub("%$","", africa.2020$fertility.rate)
+africa.2020$med.age <- gsub("%$","", africa.2020$med.age)
+africa.2020$urban.pop <- gsub("%$","", africa.2020$urban.pop)
+africa.2020$world.share <- gsub("%$","", africa.2020$world.share)
+# 2023
+africa.2023$pop.yearly.change <- gsub("%$","", africa.2023$pop.yearly.change)
+africa.2023$fertility.rate <- gsub("%$","", africa.2023$fertility.rate)
+africa.2023$med.age <- gsub("%$","", africa.2023$med.age)
+africa.2023$urban.pop <- gsub("%$","", africa.2023$urban.pop)
+africa.2023$world.share <- gsub("%$","", africa.2023$world.share)
 
 # change variables from character to numeric
-africa <- africa %>% 
+sapply(africa.2020, class) # display class of each variable
+africa.2020 <- africa.2020 %>% 
   mutate_at(c('pop.yearly.change', 'fertility.rate', 'med.age', 'urban.pop', 'world.share'), as.numeric)
-africa
+africa.2020
+str(africa.2020) # view structure of the data frame
 
-africa_data_2020 <- africa 
+sapply(africa.2023, class) # display class of each variable
+africa.2023 <- africa.2023 %>% 
+  mutate_at(c('pop.yearly.change', 'fertility.rate', 'med.age', 'urban.pop', 'world.share'), as.numeric) %>% 
+  select(-1) # remove column of former country IDs out front
+africa.2023
+str(africa.2023) # view structure of the data frame
 
-usethis::use_data(africa_data_2020, overwrite = TRUE)
+# create pop_in_mill variable
+africa.2020 <- africa.2020 %>% 
+  mutate(pop_in_mill = pop/1e06)
+africa.2023 <- africa.2023 %>% 
+  mutate(pop_in_mill = pop/1e06)
+africa.2020
+africa.2023
+
+# add a year variable to each data set
+africa.2020$year <- 2020
+africa.2020
+
+africa.2023$year <- 2023
+africa.2023
+
+# combine data sets
+joint <- bind_rows(africa.2020, africa.2023)
+
+africa_data_all <- joint
+
+usethis::use_data(africa_data_all, overwrite = TRUE)
 
 # create a documentation of our data
-# uncomment and use usethis::use_r("africa_data_2020") to open new window for documentation
+# uncomment and use usethis::use_r("africa_data_all") to open new window for documentation

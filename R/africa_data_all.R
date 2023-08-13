@@ -2,7 +2,7 @@
 #' 
 #' Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
 #' 
-#' @format A tibble with 116 rows and 12 variables
+#' @format A tibble with 116 rows and 13 variables
 #' \describe{
 #'  \item{country}{chr Name of country}
 #'  \item{pop}{dbl Country population: Overall total population (both sexes and all ages) in the region as of July 1 of the year indicated, as estimated by the United Nations, Department of Economic and Social Affairs, Population Division. (2020)}
@@ -15,6 +15,8 @@
 #'  \item{med.age}{dbl Median age of population: Age that divides the population into two numerically equal groups: half of the people are older than the median age indicated and half are younger. This parameter provides an indication of age distribution.}
 #'  \item{urban.pop}{dbl Population living in areas classified as urban according to the criteria used by each country.}
 #'  \item{world.share}{dbl Total population as a percentage of total World Population as of July 1 of the year indicated.}
+#'  \item{pop_in_mill}{dbl Country population in millions.}
+#'  \item{year}{dbl Year of panel data.}
 #'  }
 #'  
 #'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
