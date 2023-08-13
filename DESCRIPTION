@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Nathan", "Alexander", , "nna2106@columbia.edu", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-2029-7329"))
-Description: This package provides an assorment of data sets to accompany the "Introduction to Critical Statistics" text written by Nathan Alexander, PhD.
+Description: This package provides an assorment of data sets to accompany the ICS text in preparation by Nathan Alexander, PhD.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -12,3 +12,5 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true
+Imports: 
+    tibble
