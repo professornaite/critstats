@@ -44,7 +44,9 @@ africa <- africa %>%
   mutate_at(c('pop.yearly.change', 'fertility.rate', 'med.age', 'urban.pop', 'world.share'), as.numeric)
 africa
 
-africa_data_all <- africa 
+africa_data_2020 <- africa 
 
-usethis::use_data(africa_data_all, overwrite = TRUE)
+usethis::use_data(africa_data_2020, overwrite = TRUE)
 
+# create a documentation of our data
+usethis::use_r("africa_data_all")

@@ -19,3 +19,5 @@
 #'  
 #'  @source \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
 "africa_data_2020"
+
+# run devtools::document() in console to make Roxygen comments "concrete"
