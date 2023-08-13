@@ -9,7 +9,7 @@
 This package provides an assorment of data sets to accompany the ICS text in preparation by Nathan Alexander, PhD.
 }
 \author{
-\strong{Maintainer}: Nathan Alexander \email{<nathan [dot] alexander [at] columbia [dot] edu>} (\href{https://orcid.org/0000-0002-2029-7329}{ORCID})
+\strong{Maintainer}: Nathan Alexander <nathan [dot] alexander [at] columbia [dot] edu> (\href{https://orcid.org/0000-0002-2029-7329}{ORCID})
 
 }
 \keyword{internal}
