@@ -3,10 +3,9 @@ Title: Data package for exercises in critical statistical analysis
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Nathan", 
-          family = "Alexander", 
-          middle = "Napoleon",
-          email = "nna2106@columbia.edu",
+          family = "Alexander",
           role = c("aut", "cre"),
+          email = "nna2106@columbia.edu",
           comment = c(ORCID = "https://orcid.org/0000-0002-2029-7329"))
 Description: This package provides an assorment of data sets to accompany the ICS text in preparation by Nathan Alexander, PhD.
 License: MIT + file LICENSE
