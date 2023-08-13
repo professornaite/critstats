@@ -2,9 +2,10 @@ Package: critstats
 Title: Data package for exercises in critical statistical analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("Nathan", 
-          "Alexander", 
-          "nna2106@columbia.edu",
+    person(given = "Nathan", 
+          family = "Alexander", 
+          middle = "Napoleon",
+          email = "nna2106@columbia.edu",
           role = c("aut", "cre"),
           comment = c(ORCID = "https://orcid.org/0000-0002-2029-7329"))
 Description: This package provides an assorment of data sets to accompany the ICS text in preparation by Nathan Alexander, PhD.
