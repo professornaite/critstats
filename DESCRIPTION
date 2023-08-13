@@ -1,5 +1,5 @@
 Package: critstats
-Title: Data pacakge for exercises in critical statistical analysis
+Title: Data package for exercises in critical statistical analysis
 Version: 0.0.0.9000
 Authors@R: 
     person("Nathan", "Alexander", , "nna2106@columbia.edu", role = c("aut", "cre"),
