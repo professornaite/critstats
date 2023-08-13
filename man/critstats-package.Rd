@@ -4,7 +4,7 @@
 \name{critstats-package}
 \alias{critstats}
 \alias{critstats-package}
-\title{critstats: Data pacakge for exercises in critical statistical analysis}
+\title{critstats: Data package for exercises in critical statistical analysis}
 \description{
 This package provides an assorment of data sets to accompany the ICS text in preparation by Nathan Alexander, PhD.
 }
