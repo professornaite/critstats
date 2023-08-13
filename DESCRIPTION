@@ -1,12 +1,11 @@
 Package: critstats
-Title: What the Package Does (One Line, Title Case)
+Title: Data pacakge for exercises in critical statistical analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Nathan", "Alexander", , "nna2106@columbia.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-2029-7329"))
+Description: This package provides an assorment of data sets to accompany the "Introduction to Critical Statistics" text written by Nathan Alexander, PhD.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

@@ -4,7 +4,7 @@
 #' 
 #' @format A tibble with 58 rows and 11 variables
 #' \describe{
-#'  \item{country}{chr Name of country.}
+#'  \item{country}{chr Name of country}
 #'  \item{pop}{dbl Country's population (2020)}
 #'  \item{pop.yearly.change}{dbl Country's yearly population change}
 #'  \item{pop.net.change}{dbl Country's net population change}
@@ -17,7 +17,7 @@
 #'  \item{world.share}{dbl Country's world share of population}
 #'  }
 #'  
-#'  @source \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
+#'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
 "africa_data_2020"
 
 # run devtools::document() in console to make Roxygen comments "concrete"
