@@ -1,8 +1,8 @@
-#' Combined 2020 and 2023 data on 54 African countries and 4 dependencies/territories
+#' 2020 data on 54 African countries and 4 dependencies/territories
 #' 
 #' Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
 #' 
-#' @format A tibble with 116 rows and 12 variables
+#' @format A tibble with 58 rows and 11 variables
 #' \describe{
 #'  \item{country}{chr Name of country}
 #'  \item{pop}{dbl Country population: Overall total population (both sexes and all ages) in the region as of July 1 of the year indicated, as estimated by the United Nations, Department of Economic and Social Affairs, Population Division. (2020)}
@@ -18,8 +18,6 @@
 #'  }
 #'  
 #'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
-"africa_data_all"
+"africa_data_2020"
 
 # run devtools::document() in console to make Roxygen comments "concrete"
-
-

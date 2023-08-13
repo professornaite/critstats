@@ -1,13 +1,13 @@
-#' Combined 2020 and 2023 data on 54 African countries and 4 dependencies/territories
+#' 2023 data on 54 African countries and 4 dependencies/territories
 #' 
 #' Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
 #' 
-#' @format A tibble with 116 rows and 12 variables
+#' @format A tibble with 58 rows and 11 variables
 #' \describe{
 #'  \item{country}{chr Name of country}
 #'  \item{pop}{dbl Country population: Overall total population (both sexes and all ages) in the region as of July 1 of the year indicated, as estimated by the United Nations, Department of Economic and Social Affairs, Population Division. (2020)}
-#'  \item{pop.yearly.change}{dbl Yearly percent change: Latest year annual percentage change equivalent assuming homogeneous change in the preceding five year period, calculated through reverse compounding.}
-#'  \item{pop.net.change}{dbl Yearly change: Average annual numerical change over the preceding five year period.}
+#'  \item{pop.yearly.change}{dbl Yearly percent change: For 2023: percentage change in total population over the last year (from July 1, 2022 to June 30 2023). For all other years: latest year annual percentage change equivalent assuming homogeneous change in the preceding five year period, calculated through reverse compounding.}
+#'  \item{pop.net.change}{dbl Yearly change: For 2023: absolute change in total population (increase or decrease in number of people) over the last year (from July 1, 2022 to June 30 2023). For all other years: average annual numerical change over the preceding five year period.}
 #'  \item{density}{dbl (Population Density) Population per square Kilometer (Km²).}
 #'  \item{area}{dbl Total land area (Km²)}
 #'  \item{migrants}{dbl Net migrant population: The average annual number of immigrants minus the number of emigrants over the preceding five year period (running from July 1 to June 30 of the initial and final years), or subsequent five year period (for 2016 data). A negative number means that there are more emigrants than immigrants.}
@@ -18,8 +18,6 @@
 #'  }
 #'  
 #'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
-"africa_data_all"
+"africa_data_2023"
 
 # run devtools::document() in console to make Roxygen comments "concrete"
-
-

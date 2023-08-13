@@ -49,4 +49,4 @@ africa_data_2020 <- africa
 usethis::use_data(africa_data_2020, overwrite = TRUE)
 
 # create a documentation of our data
-# uncomment and use usethis::use_r("africa_data_all") to open new window for documenation
+# uncomment and use usethis::use_r("africa_data_2020") to open new window for documentation
