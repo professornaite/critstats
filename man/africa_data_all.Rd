@@ -5,7 +5,17 @@
 \alias{africa_data_all}
 \title{Combined 2020 and 2023 data on 54 African countries and 4 dependencies/territories}
 \format{
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 116 rows and 13 columns.
+}
+\usage{
+africa_data_all
+}
+\description{
+Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
+}
+\details{
 A tibble with 116 rows and 13 variables
+
 \describe{
 \item{country}{chr Name of country}
 \item{pop}{dbl Country population: Overall total population (both sexes and all ages) in the region as of July 1 of the year indicated, as estimated by the United Nations, Department of Economic and Social Affairs, Population Division. (2020)}
@@ -22,12 +32,12 @@ A tibble with 116 rows and 13 variables
 \item{year}{dbl Year of panel data.}
 }
 
-@source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
+The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
+
+@examples
+\subsection{see structure of data}{
+
+str(critstats::africa_data_all)
 }
-\usage{
-africa_data_all
-}
-\description{
-Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
 }
 \keyword{datasets}

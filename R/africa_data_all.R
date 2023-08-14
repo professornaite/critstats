@@ -2,7 +2,8 @@
 #' 
 #' Countries and dependencies are classified by population (pop), yearly change, net change, density, area, migrants, fertility rate, median age (med.age), urban poplation, and world share of population.
 #' 
-#' @format A tibble with 116 rows and 13 variables
+#' A tibble with 116 rows and 13 variables
+#' 
 #' \describe{
 #'  \item{country}{chr Name of country}
 #'  \item{pop}{dbl Country population: Overall total population (both sexes and all ages) in the region as of July 1 of the year indicated, as estimated by the United Nations, Department of Economic and Social Affairs, Population Division. (2020)}
@@ -19,10 +20,12 @@
 #'  \item{year}{dbl Year of panel data.}
 #'  }
 #'  
-#'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
+#'  The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
+#'  
+#'  @examples 
+#'  ## see structure of data
+#'  str(critstats::africa_data_all)
 "africa_data_all"
-#'  @references None
-#'  @example summarize(critstats::africa_data_all)
 
 # run devtools::document() in console to make Roxygen comments "concrete"
 

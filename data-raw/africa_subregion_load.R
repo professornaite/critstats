@@ -10,9 +10,15 @@ summary(df) # view raw summary statistics
 df
 
 # remove rows with NA's
-df %>% 
+df <- df %>% 
   na.omit()
 
+africa_subregion <- df
+
+usethis::use_data(africa_subregion, overwrite = TRUE)
+
+# create a documentation of our data
+# uncomment and use usethis::use_r("africa_subregion") to open new window for documentation
 
 
 
