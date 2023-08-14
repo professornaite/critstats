@@ -21,6 +21,8 @@
 #'  
 #'  @source The most up-to-date data for these variables can be found at \url{https://www.worldometers.info/population/countries-in-africa-by-population/}
 "africa_data_all"
+#'  @references None
+#'  @example summarize(critstats::africa_data_all)
 
 # run devtools::document() in console to make Roxygen comments "concrete"
 

@@ -5,7 +5,14 @@ library(tidyverse)
 library(dplyr)
 
 africa_sub_raw <- readr::read_csv("data-raw/africa_pop_country_subregion.csv")
-View(africa_sub_raw)
+df <- as_tibble(africa_sub_raw) # so the data prints a little nicer
+summary(df) # view raw summary statistics
+df
 
-africa_sub <- as_tibble(africa_data_sub_raw) # so the data prints a little nicer
-summary(africa_sub) # view raw summary statistics
+# remove rows with NA's
+df %>% 
+  na.omit()
+
+
+
+

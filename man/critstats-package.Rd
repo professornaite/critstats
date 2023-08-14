@@ -6,7 +6,7 @@
 \alias{critstats-package}
 \title{critstats: Data package for exercises in critical statistical analysis}
 \description{
-This package contains data sets and tools to accompany the ICS text (in preparation) by Nathan Alexander, PhD.
+This package contains data sets and tools to accompany the ICS text (Nathan Alexander, PhD, in preparation).
 }
 \author{
 \strong{Maintainer}: Nathan Alexander \email{nna2106@columbia.edu} (\href{https://orcid.org/0000-0002-2029-7329}{ORCID})
