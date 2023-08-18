@@ -7,4 +7,5 @@ Critical statistics data package for use with ICS. This package is in the early 
 install.packages("remotes")
 library(remotes)
 remotes::install_github("professornaite/critstats", force=TRUE)
+data()
 ```
