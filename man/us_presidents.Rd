@@ -14,7 +14,7 @@ us_presidents
 Data contains president, president political party, start data, end data, and vice president by term
 }
 \details{
-A tibble with 68 rows and 5 variables
+A tibble with 70 rows and 5 variables
 
 \describe{
 \item{potus}{chr President}
