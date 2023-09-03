@@ -1,4 +1,4 @@
-# critstats
+# `critstats`
 Critical statistics data package for use with ICS. This package is in the early stages of development.
 
 ```{r}
