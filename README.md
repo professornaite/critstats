@@ -1,5 +1,5 @@
 # `critstats`
-Critical statistics data package for use with ICS. This package is in the early stages of development.
+Critical statistics data package for use with ICS.
 
 ## installation, method one
 ```{r}
@@ -19,4 +19,6 @@ remotes::install_github("professornaite/critstats", force=TRUE)
 ```{r}
 data(package='critstats')
 ```
+
+This package is in the early stages of development.
 
