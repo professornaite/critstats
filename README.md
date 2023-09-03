@@ -3,6 +3,8 @@ Critical statistics data package for use with ICS. This package is in the early 
 
 ## installation, method one
 ```{r}
+install.packages("devtools")
+library(devtools)
 devtools::install_github("professornaite/critstats")
 ```
  
