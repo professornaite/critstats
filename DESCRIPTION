@@ -1,4 +1,5 @@
 Package: critstats
+Type: Package
 Title: Data package for exercises in critical statistical analysis
 Version: 0.0.0.9000
 Authors@R: 
@@ -15,5 +16,6 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: https://github.com/professornaite/critstats
 Imports: 
     tibble

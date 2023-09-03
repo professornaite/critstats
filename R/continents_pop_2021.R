@@ -3,6 +3,7 @@
 #' Continental populations in 2021
 #' 
 #' @format A tibble with 7 rows and 4 variables
+#' 
 #' \describe{
 #'  \item{continent}{chr Name of continent}
 #'  \item{pop}{dbl 2010 population}
