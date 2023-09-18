@@ -1,13 +1,7 @@
 # `critstats`
 Critical statistics data package for use with ICS.
-
-## installation, method one
-```{r}
-library(devtools)
-devtools::install_github("professornaite/critstats")
-```
  
-## installation, method two
+## installation
 ```{r}
 install.packages("remotes")
 library(remotes)
