@@ -6,7 +6,7 @@
 \alias{critstats-package}
 \title{critstats: Data package for exercises in critical statistical analysis}
 \description{
-This package contains data sets and tools to accompany the ICS text (in preparation) by Nathan Alexander.
+Data sets and tools to accompany the ICS text.
 }
 \seealso{
 Useful links:
