@@ -56,7 +56,6 @@ Sources of the data are included in descriptions, use `??critstats:dataset`
 data(package='critstats')
 ```
 
-
 ### Functions and vignettes
 
 * This package is still in development. 
