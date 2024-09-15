@@ -1,7 +1,24 @@
 # critstats
 
-This package contains a variety of data sets for Introduction to Critical Statistics (ICS) by Nathan Alexander, Center for Applied Data Science and Analytics, Howard University.
+This package contains a variety of data sets provied by different organizations and sources. These data accompany Introduction to Critical Statistics (ICS) by Nathan Alexander (Howard University).
 
+## Installation
+
+```R
+install.packages("devtools")
+library(devtools)
+devtools:install_github("professornaite/critstats")
+```
+
+or
+
+```R
+install.packages("remotes")
+library(remotes)
+remotes::install_github("professornaite/critstats", force=TRUE)
+```
+
+### Datasets
 
 *  `africa_data_2020`: 2020 data on 54 African countries and 4 dependencies/territories
 
@@ -31,29 +48,20 @@ This package contains a variety of data sets for Introduction to Critical Statis
 
 * `yahoo_data`:	Yahoo! News Race and Justice poll results
 
-## Installation
+Sources of the data are included in descriptions, use `??critstats:dataset`
 
-```R
-install.packages("devtools")
-library(devtools)
-devtools:install_github("professornaite/critstats")
-```
-
-or
-
-```R
-install.packages("remotes")
-library(remotes)
-remotes::install_github("professornaite/critstats", force=TRUE)
-```
-
-## View datasets in this package
+#### View datasets in `critstats`
 
 ```R
 data(package='critstats')
 ```
 
-This package is in phase two of development. Please cite.
+
+### Functions and vignettes
+
+* `categorize_median_income`: Take an estimated value and categorize it into a set of $n$ income classes
+
+This package is still in development. Please cite.
 
 Alexander, N. N. (2024). critstats: Data package for Introduction to Critical Statistics. Quantitative Histories Workshop and Center for Applied Data Science and Analytics (CADSA), Howard University, Washington, DC.
 
