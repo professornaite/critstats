@@ -59,9 +59,9 @@ data(package='critstats')
 
 ### Functions and vignettes
 
-* `categorize_median_income`: Take an estimated value and categorize it into a set of $n$ income classes
+* This package is still in development. 
 
-This package is still in development. Please cite.
+Please cite:
 
 Alexander, N. N. (2024). critstats: Data package for Introduction to Critical Statistics. Quantitative Histories Workshop and Center for Applied Data Science and Analytics (CADSA), Howard University, Washington, DC.
 
