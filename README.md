@@ -1,4 +1,4 @@
-# `critstats`
+# `Critstats`
 Critical statistics data package for use with ICS.
  
 ## installation
@@ -13,5 +13,7 @@ remotes::install_github("professornaite/critstats", force=TRUE)
 data(package='critstats')
 ```
 
-This package is in the early stages of development.
+This package is in phase two of development. Please cite.
+
+Alexander, N. N. (2024). critstats: Data package for Introduction to Critical Statistics. R/Posit. Quantitative Histories Workshop, Washington, DC.
 

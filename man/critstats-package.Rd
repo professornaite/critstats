@@ -8,13 +8,6 @@
 \description{
 Data sets and tools to accompany the ICS text.
 }
-\seealso{
-Useful links:
-\itemize{
-  \item \url{https://github.com/professornaite/critstats}
-}
-
-}
 \author{
 \strong{Maintainer}: Nathan Alexander \email{nna2106@columbia.edu} (\href{https://orcid.org/0000-0002-2029-7329}{ORCID})
 
