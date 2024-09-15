@@ -6,19 +6,19 @@ This package contains a variety of data sets provied by different organizations 
 
 ```R
 install.packages("devtools")
-library(devtools)
-devtools:install_github("professornaite/critstats")
-```
-
-or
-
-```R
 install.packages("remotes")
 library(remotes)
 remotes::install_github("professornaite/critstats", force=TRUE)
 ```
 
-### Datasets
+### Installation issues
+
+```R
+library(utils)
+remove.packages("critstats")
+```
+
+## Datasets
 
 *  `africa_data_2020`: 2020 data on 54 African countries and 4 dependencies/territories
 
